@@ -57,14 +57,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Lregs = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BnCancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LbID = new System.Windows.Forms.Label();
             this.Lnombre = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnBorrar = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.BnNuevo = new System.Windows.Forms.Button();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -172,7 +172,7 @@
             this.iDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactosBindingSource, "ID", true));
             this.iDTextBox.Location = new System.Drawing.Point(12, 28);
             this.iDTextBox.Name = "iDTextBox";
-            this.iDTextBox.Size = new System.Drawing.Size(244, 22);
+            this.iDTextBox.Size = new System.Drawing.Size(329, 22);
             this.iDTextBox.TabIndex = 2;
             this.iDTextBox.TextChanged += new System.EventHandler(this.iDTextBox_TextChanged);
             // 
@@ -181,7 +181,7 @@
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactosBindingSource, "Nombre", true));
             this.nombreTextBox.Location = new System.Drawing.Point(12, 85);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(244, 22);
+            this.nombreTextBox.Size = new System.Drawing.Size(329, 22);
             this.nombreTextBox.TabIndex = 4;
             this.nombreTextBox.TextChanged += new System.EventHandler(this.nombreTextBox_TextChanged);
             // 
@@ -201,7 +201,7 @@
             this.apellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactosBindingSource, "Apellido", true));
             this.apellidoTextBox.Location = new System.Drawing.Point(12, 145);
             this.apellidoTextBox.Name = "apellidoTextBox";
-            this.apellidoTextBox.Size = new System.Drawing.Size(244, 22);
+            this.apellidoTextBox.Size = new System.Drawing.Size(329, 22);
             this.apellidoTextBox.TabIndex = 6;
             // 
             // direccionLabel
@@ -219,7 +219,7 @@
             this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactosBindingSource, "Direccion", true));
             this.direccionTextBox.Location = new System.Drawing.Point(12, 208);
             this.direccionTextBox.Name = "direccionTextBox";
-            this.direccionTextBox.Size = new System.Drawing.Size(244, 22);
+            this.direccionTextBox.Size = new System.Drawing.Size(329, 22);
             this.direccionTextBox.TabIndex = 8;
             // 
             // fechaNacimientoLabel
@@ -237,7 +237,7 @@
             this.fechaNacimientoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.contactosBindingSource, "FechaNacimiento", true));
             this.fechaNacimientoDateTimePicker.Location = new System.Drawing.Point(14, 267);
             this.fechaNacimientoDateTimePicker.Name = "fechaNacimientoDateTimePicker";
-            this.fechaNacimientoDateTimePicker.Size = new System.Drawing.Size(242, 22);
+            this.fechaNacimientoDateTimePicker.Size = new System.Drawing.Size(327, 22);
             this.fechaNacimientoDateTimePicker.TabIndex = 10;
             // 
             // celularLabel
@@ -255,7 +255,7 @@
             this.celularTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactosBindingSource, "Celular", true));
             this.celularTextBox.Location = new System.Drawing.Point(18, 331);
             this.celularTextBox.Name = "celularTextBox";
-            this.celularTextBox.Size = new System.Drawing.Size(238, 22);
+            this.celularTextBox.Size = new System.Drawing.Size(323, 22);
             this.celularTextBox.TabIndex = 12;
             // 
             // contactosDataGridView
@@ -337,27 +337,16 @@
             this.Lregs.TabIndex = 18;
             this.Lregs.Text = "1 / 1";
             // 
-            // button5
+            // BnCancelar
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(421, 402);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(112, 64);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Nuevo";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(623, 402);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 64);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Cancelar";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.BnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BnCancelar.Location = new System.Drawing.Point(637, 468);
+            this.BnCancelar.Name = "BnCancelar";
+            this.BnCancelar.Size = new System.Drawing.Size(125, 50);
+            this.BnCancelar.TabIndex = 20;
+            this.BnCancelar.Text = "CANCELAR";
+            this.BnCancelar.UseVisualStyleBackColor = true;
+            this.BnCancelar.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel1
             // 
@@ -407,29 +396,41 @@
             this.panel2.Controls.Add(this.nombreTextBox);
             this.panel2.Location = new System.Drawing.Point(421, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(278, 359);
+            this.panel2.Size = new System.Drawing.Size(358, 359);
             this.panel2.TabIndex = 25;
             // 
             // BtnBorrar
             // 
-            this.BtnBorrar.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.favicon__9_;
             this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrar.Location = new System.Drawing.Point(742, 402);
+            this.BtnBorrar.Location = new System.Drawing.Point(637, 409);
             this.BtnBorrar.Name = "BtnBorrar";
-            this.BtnBorrar.Size = new System.Drawing.Size(62, 64);
+            this.BtnBorrar.Size = new System.Drawing.Size(125, 53);
             this.BtnBorrar.TabIndex = 26;
+            this.BtnBorrar.Text = "BORRAR";
             this.BtnBorrar.UseVisualStyleBackColor = true;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
             // 
             // button7
             // 
-            this.button7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.favicon__1_;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(549, 402);
+            this.button7.Location = new System.Drawing.Point(418, 465);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(68, 64);
+            this.button7.Size = new System.Drawing.Size(125, 50);
             this.button7.TabIndex = 22;
+            this.button7.Text = "GUARDAR";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // BnNuevo
+            // 
+            this.BnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BnNuevo.Location = new System.Drawing.Point(418, 409);
+            this.BnNuevo.Name = "BnNuevo";
+            this.BnNuevo.Size = new System.Drawing.Size(126, 50);
+            this.BnNuevo.TabIndex = 19;
+            this.BnNuevo.Text = "NUEVO";
+            this.BnNuevo.UseVisualStyleBackColor = true;
+            this.BnNuevo.Click += new System.EventHandler(this.button5_Click);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -485,8 +486,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.BnCancelar);
+            this.Controls.Add(this.BnNuevo);
             this.Controls.Add(this.contactosDataGridView);
             this.Controls.Add(this.contactosBindingNavigator);
             this.Name = "Form1";
@@ -535,8 +536,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label Lregs;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BnNuevo;
+        private System.Windows.Forms.Button BnCancelar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label LbID;

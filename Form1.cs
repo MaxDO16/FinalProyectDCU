@@ -101,7 +101,24 @@ namespace WindowsFormsApp1
 
         private void Blk()
         {
+            BnCancelar.Enabled = true;
             contactosDataGridView.Enabled = false;
+            contactosBindingNavigator.Enabled = false;
+            panel2.Enabled = false;
+            BnNuevo.Enabled = false;
+            BtnBorrar.Enabled = false;
+
+        }
+
+        private void DBlk()
+        {
+            BnCancelar.Enabled = true;
+            contactosDataGridView.Enabled = true;
+            contactosBindingNavigator.Enabled = true;
+            panel2.Enabled = true;
+            BnNuevo.Enabled = true;
+            BtnBorrar.Enabled = true;
+
         }
 
         private bool Completo()
@@ -123,6 +140,18 @@ namespace WindowsFormsApp1
 
         private void apellidoLabel_Click(object sender, EventArgs e)
         {
+        }
+
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            DialogResult OP = MessageBox.Show("Eliminar?", "ATENCION", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (OP == DialogResult.Yes)
+            {
+                contactosBindingSource.RemoveCurrent();
+                contactosTableAdapter.Update(agendaElectronicaDataSet.Contactos);
+                this.contactosTableAdapter.Fill(this.agendaElectronicaDataSet.Contactos);
+            }
         }
     }
 

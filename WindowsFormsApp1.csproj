@@ -123,5 +123,14 @@
   <ItemGroup>
     <None Include="Resources\favicon %289%29.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %2810%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %2811%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %2812%29.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
